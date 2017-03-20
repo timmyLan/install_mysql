@@ -22,7 +22,7 @@ apt-get install -y mysql-server
 
 # Replace my.cnf
 sudo mv /etc/mysql/my.cnf /etc/mysql/my.cnf.backup
-sudo mv /etc/mysql/mysql.conf.d/mysqld.cnf /etc/mysql/my.cnf
+sudo cp /etc/mysql/mysql.conf.d/mysqld.cnf /etc/mysql/my.cnf
 
 # Restart Mysql service
 sudo service mysql restart
