@@ -13,7 +13,7 @@ apt-get update
 
 # Install MySQL
 
-MYSQL_PASS="secret"
+MYSQL_PASS=""
 
 debconf-set-selections <<< "mysql-community-server mysql-community-server/data-dir select ''"
 debconf-set-selections <<< "mysql-community-server mysql-community-server/root-pass password $MYSQL_PASS"
@@ -23,6 +23,3 @@ apt-get install -y mysql-server
 # Replace my.cnf
 sudo mv /etc/mysql/my.cnf /etc/mysql/my.cnf.backup
 sudo cp /etc/mysql/mysql.conf.d/mysqld.cnf /etc/mysql/my.cnf
-
-# Restart Mysql service
-sudo service mysql restart
