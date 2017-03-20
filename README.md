@@ -1,13 +1,8 @@
 # auto install mysql5.7 in ubuntu14.04
-
-* copy install.sh file
-
+* how to use it
 ```bash
- git clone https://github.com/timmyLan/install_mysql.git
- cd install_mysql && cp install.sh ~
-```
-* bash install.sh
-
-```bash
- bash install.sh
+ #auto install mysql5.7 in ubuntu14.04
+ curl -L https://raw.githubusercontent.com/timmyLan/install_mysql/master/install.sh | bash
+ #restart mysql service
+ sudo service mysql restart
 ```
