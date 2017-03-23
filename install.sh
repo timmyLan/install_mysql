@@ -21,5 +21,5 @@ debconf-set-selections <<< "mysql-community-server mysql-community-server/re-roo
 apt-get install -y mysql-server
 
 # Replace my.cnf
-sudo mv /etc/mysql/my.cnf /etc/mysql/my.cnf.backup
-sudo cp /etc/mysql/mysql.conf.d/mysqld.cnf /etc/mysql/my.cnf
+#sudo mv /etc/mysql/my.cnf /etc/mysql/my.cnf.backup
+#sudo cp /etc/mysql/mysql.conf.d/mysqld.cnf /etc/mysql/my.cnf
