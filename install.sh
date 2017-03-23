@@ -13,7 +13,7 @@ apt-get update
 
 # Install MySQL
 
-MYSQL_PASS=""
+MYSQL_PASS="root@admin"
 
 debconf-set-selections <<< "mysql-community-server mysql-community-server/data-dir select ''"
 debconf-set-selections <<< "mysql-community-server mysql-community-server/root-pass password $MYSQL_PASS"
